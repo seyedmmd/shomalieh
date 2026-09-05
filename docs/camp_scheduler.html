@@ -422,7 +422,7 @@
   function mixedTime(m){
     m = Math.max(0, Math.min(1439, Math.round(m)));
     var h = Math.floor(m/60), mm = m%60;
-    return fa(pad2(h)) + ':' + pad2(mm);
+    return fa(pad2(h)) + ':' + fa(pad2(mm));
   }
   function snap(m){ return Math.round(m/SNAP_MIN)*SNAP_MIN; }
   function uid(){ return 'ev_' + Date.now().toString(36) + '_' + Math.random().toString(36).slice(2,7); }
